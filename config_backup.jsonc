@@ -4,7 +4,7 @@
   // Logo settings (your ASCII art file)
   "logo": {
     "type": "file",
-    "source": "luffy_ascii_g5_color.txt",
+    "source": "$HOME/.config/fastfetch/luffy_ascii_g5_color.txt",
     "padding": { "right": 2 }
   },
 
