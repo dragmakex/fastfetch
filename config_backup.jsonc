@@ -1,0 +1,67 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+
+  // Logo settings (your ASCII art file)
+  "logo": {
+    "type": "file",
+    "source": "luffy_ascii_g5_color.txt",
+    "padding": { "right": 2 }
+  },
+
+  // Display settings (unit size, frequency precision)
+  "display": {
+    "separator": ":",
+    "size": {
+      "maxPrefix": "MiB",
+      "ndigits": 0
+    }
+  },
+
+  // Modules to show
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    {
+      "type": "kernel",
+      "format": "{release}"
+    },
+    {
+      "type": "uptime",
+      "format": "{1}d {2}h {3}m"
+    },
+    {
+      "type": "packages",
+      "combined": true
+    },
+    "shell",
+    {
+      "type": "display",
+      "key": "Resolution"
+    },
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "terminal",
+    {
+      "type": "terminalfont"
+    },
+    "cpu",
+    {
+      "type": "gpu",
+      "key": "GPU",
+      "format": "{name}"
+    },
+    {
+      "type": "memory",
+      "format": "{used} / {total}"
+    },
+    "cpuusage",
+    "battery",
+    "break",
+    "colors"
+  ]
+}
